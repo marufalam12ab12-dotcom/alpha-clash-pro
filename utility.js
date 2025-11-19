@@ -43,3 +43,10 @@ function setValueById (elementId,value){
     const getId = document.getElementById(elementId);
     getId.innerText = value;
 }
+
+
+function getElementTextById (elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+}

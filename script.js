@@ -12,6 +12,9 @@
 function handleKeyboardButtonPress(event){
     const playerPressed = event.key;
     console.log(playerPressed);
+    if(playerPressed === 'Escape'){
+        gameOver();
+    }
     
     const getCurrentText = document.getElementById('current-text');
     const currentText = getCurrentText.innerText;
@@ -99,4 +102,7 @@ function gameOver(){
 
     const lastScore = getTextElementById('current-score');
     setValueById ('final-score',lastScore)
+
+    const currentAlphabet = getElementTextById ('current-text');
+    removeBackgroundColorById(currentAlphabet);
 }
