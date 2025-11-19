@@ -4,3 +4,10 @@
 .font-poppins{
     font-family: 'Poppins',sans-serif;
 }
+.art-board{
+    border: 20px solid blanchedalmond;
+    height: 400px;
+    width: 1000px;
+    margin: 0px auto;
+    
+}
